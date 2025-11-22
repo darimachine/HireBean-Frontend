@@ -1,0 +1,15 @@
+export const colors = {
+  primary: "#2C2F40",
+  primaryGrey1: "#737684",
+  primaryGrey2: "#9093A1",
+  primaryGrey3: "#D0D3DF",
+  primaryGrey4: "#F1F3F9",
+  secondary1: "#3B59EF", // Основно синьо
+  secondary2: "#5D88FF",
+  secondaryGrey1: "#7B809A",
+  secondaryGrey2: "#9A9FB9",
+  secondaryGrey3: "#E3E6F3",
+  secondaryGrey4: "#F6F8FE", // Фон
+  white: "#FFFFFF",
+  success: "#4CAF50",
+};
