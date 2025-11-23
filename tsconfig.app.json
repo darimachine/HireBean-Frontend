@@ -22,7 +22,18 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    /* Additional Options for importing modules */
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["components/*"],
+      "config/*": ["config/*"],
+      "pages/*": ["pages/*"],
+      "theme/*": ["theme/*"],
+      "utils/*": ["utils/*"],
+      "assets/*": ["assets/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

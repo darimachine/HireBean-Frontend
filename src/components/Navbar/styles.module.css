@@ -1,0 +1,40 @@
+.appBar {
+    border-bottom: 1px solid transparent; /* Ще се оцвети през sx */
+}
+
+.toolbar {
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 900px) {
+    .navLinks {
+        display: none;
+    }
+}
+
+.actionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.employerButton {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .employerButton {
+        display: none;
+    }
+}

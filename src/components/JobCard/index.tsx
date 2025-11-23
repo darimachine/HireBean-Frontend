@@ -1,7 +1,7 @@
 
 import {Paper, Box, Typography, Chip, Avatar, IconButton, Button} from '@mui/material';
 import {MapPin, DollarSign, Bell, ChevronRight} from 'lucide-react';
-import {colors} from '../../../theme/colors.ts';
+import {colors} from 'theme/colors.ts';
 interface IJobProps {
   id: number | string;
   title: string;
@@ -21,7 +21,7 @@ const JobCard = ({
   tags,
   isNew = false,
   logo,
-}: IJobProps) {
+}: IJobProps) => {
   return (
     <Paper
       elevation={0}

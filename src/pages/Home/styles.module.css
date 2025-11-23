@@ -1,0 +1,96 @@
+.pageWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F6F8FE; /* secondaryGrey4 */
+}
+
+.mainContainer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex: 1;
+}
+
+@media (min-width: 1536px) {
+    .mainContainer {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.stickyWrapper {
+    position: sticky;
+    top: 100px;
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.listTitle {
+    font-weight: 800 !important;
+    color: #2C2F40; /* primary */
+}
+
+.jobsCount {
+    color: #737684; /* primaryGrey1 */
+}
+
+.jobsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.loadMoreBtn {
+    margin-top: 24px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    background-color: #fff !important;
+    color: #2C2F40 !important; /* primary */
+    border-color: #D0D3DF !important; /* secondaryGrey3 */
+    font-weight: 700 !important;
+}
+
+.loadMoreBtn:hover {
+    border-color: #3B59EF !important; /* secondary1 */
+    color: #3B59EF !important;
+}
+
+.mobileFilterBtn {
+    background-color: white !important;
+}
+
+.promoBox {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #D0D3DF; /* secondaryGrey3 */
+}
+
+.promoTitle {
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase;
+    color: #737684; /* primaryGrey1 */
+}
+
+.promoHeading {
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+    color: #2C2F40; /* primary */
+}
+
+.createProfileBtn {
+    margin-top: 8px !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+}

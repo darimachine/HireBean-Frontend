@@ -9,7 +9,7 @@ import {
     useNavigate,
     useParams,
 } from "react-router";
-import Home from "../pages/Home";
+import Home from "pages/Home";
 
 const Router = () => {
 
@@ -24,3 +24,4 @@ const Router = () => {
         </BrowserRouter>
     )
 }
+export default Router;

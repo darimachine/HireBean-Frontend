@@ -1,0 +1,38 @@
+.filtersContainer {
+    padding-right: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    text-transform: uppercase;
+}
+
+.checkboxLabel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.checkbox {
+    padding: 6px !important;
+}
+
+.divider {
+    margin-bottom: 24px !important;
+    margin-top: 12px !important;
+}
+
+.tagsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
