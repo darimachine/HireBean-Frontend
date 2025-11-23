@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Container, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Container, IconButton, Toolbar, Typography } from '@mui/material';
 import { Bell, Menu } from 'lucide-react';
 import { colors } from 'theme/colors';
 import styles from './styles.module.css';
@@ -13,7 +13,7 @@ const Navbar = () => (
     sx={{
       bgcolor: colors.white,
       borderBottom: `1px solid ${colors.secondaryGrey3}`,
-      zIndex: (theme) => theme.zIndex.drawer + 1
+      zIndex: (theme) => theme.zIndex.drawer + 1,
     }}
   >
     {/* px: 3 гарантира, че логото е подравнено с филтрите отдолу */}
@@ -32,10 +32,11 @@ const Navbar = () => (
               fontSize: '1.8rem',
               lineHeight: 1,
               mr: 4,
-              fontFamily: '"Inter", sans-serif'
+              fontFamily: '"Inter", sans-serif',
             }}
           >
-            HireBean<span style={{ color: colors.primary, fontSize: '2.2rem', lineHeight: 0 }}>.</span>
+            HireBean
+            <span style={{ color: colors.primary, fontSize: '2.2rem', lineHeight: 0 }}>.</span>
           </Typography>
 
           <Box className={styles.navLinks} sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
@@ -51,7 +52,7 @@ const Navbar = () => (
                   color: colors.primary,
                   textTransform: 'uppercase',
                   px: 2,
-                  '&:hover': { color: colors.secondary1, bgcolor: 'transparent' }
+                  '&:hover': { color: colors.secondary1, bgcolor: 'transparent' },
                 }}
               >
                 {item}
@@ -73,7 +74,7 @@ const Navbar = () => (
               borderRadius: '6px',
               fontWeight: 600,
               borderWidth: '1px',
-              mr: 1
+              mr: 1,
             }}
           >
             For Employers

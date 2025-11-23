@@ -1,5 +1,5 @@
-import { createTheme} from "@mui/material/styles";
-import { colors } from "./colors";
+import { createTheme } from '@mui/material/styles';
+import { colors } from './colors';
 
 const theme = createTheme({
   palette: {
@@ -12,7 +12,7 @@ const theme = createTheme({
     text: {
       primary: colors.primary,
       secondary: colors.primaryGrey1,
-    }
+    },
   },
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -27,12 +27,12 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "6px",
-          textTransform: "none",
-          boxShadow: "none",
-          padding: "8px 16px",
+          borderRadius: '6px',
+          textTransform: 'none',
+          boxShadow: 'none',
+          padding: '8px 16px',
           '&:hover': {
-            boxShadow: "0px 2px 4px rgba(0,0,0,0.1)",
+            boxShadow: '0px 2px 4px rgba(0,0,0,0.1)',
           },
         },
       },
@@ -40,18 +40,18 @@ const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          boxShadow: "0px 1px 3px rgba(0,0,0,0.05)",
+          boxShadow: '0px 1px 3px rgba(0,0,0,0.05)',
           border: `1px solid ${colors.secondaryGrey3}`,
-        }
-      }
+        },
+      },
     },
     MuiChip: {
       styleOverrides: {
         root: {
-          borderRadius: "6px",
+          borderRadius: '6px',
           fontWeight: 500,
-        }
-      }
+        },
+      },
     },
   },
 });

@@ -1,18 +1,35 @@
-import { Box, Typography, Checkbox, FormControlLabel, FormGroup, Button, Divider } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  Button,
+  Divider,
+} from '@mui/material';
 import { colors } from 'theme/colors';
 
 const categories = [
-  { label: "Backend Development", count: 120 },
-  { label: "Frontend Development", count: 85 },
-  { label: "Fullstack Development", count: 64 },
-  { label: "Quality Assurance", count: 42 },
-  { label: "DevOps / SysAdmin", count: 38 },
-  { label: "Mobile Development", count: 25 },
-  { label: "PM / BA / Agile", count: 18 },
-  { label: "Data Science / AI", count: 12 },
+  { label: 'Backend Development', count: 120 },
+  { label: 'Frontend Development', count: 85 },
+  { label: 'Fullstack Development', count: 64 },
+  { label: 'Quality Assurance', count: 42 },
+  { label: 'DevOps / SysAdmin', count: 38 },
+  { label: 'Mobile Development', count: 25 },
+  { label: 'PM / BA / Agile', count: 18 },
+  { label: 'Data Science / AI', count: 12 },
 ];
 
-const technologies = ["Java", "JavaScript", "Python", "C#", "React", "Angular", "Spring Boot", "AWS"];
+const technologies = [
+  'Java',
+  'JavaScript',
+  'Python',
+  'C#',
+  'React',
+  'Angular',
+  'Spring Boot',
+  'AWS',
+];
 
 const JobFilters = () => {
   return (
@@ -39,19 +56,30 @@ const JobFilters = () => {
                 size="small"
                 sx={{
                   color: colors.primaryGrey2,
-                  '&.Mui-checked': { color: colors.secondary1 }
+                  '&.Mui-checked': { color: colors.secondary1 },
                 }}
               />
             }
             label={
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
-                <Typography variant="body2" color="text.primary">{cat.label}</Typography>
-                <Typography variant="caption" sx={{ color: colors.primaryGrey2, ml: 1 }}>({cat.count})</Typography>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  width: '100%',
+                  alignItems: 'center',
+                }}
+              >
+                <Typography variant="body2" color="text.primary">
+                  {cat.label}
+                </Typography>
+                <Typography variant="caption" sx={{ color: colors.primaryGrey2, ml: 1 }}>
+                  ({cat.count})
+                </Typography>
               </Box>
             }
             sx={{
               '& .MuiFormControlLabel-label': { width: '100%' },
-              mb: 0.5
+              mb: 0.5,
             }}
           />
         ))}
@@ -64,7 +92,7 @@ const JobFilters = () => {
         TECH STACK
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-        {technologies.map(tech => (
+        {technologies.map((tech) => (
           <Button
             key={tech}
             variant="outlined"
@@ -77,7 +105,7 @@ const JobFilters = () => {
               px: 1,
               py: 0.2,
               fontSize: '0.75rem',
-              '&:hover': { borderColor: colors.secondary1, color: colors.secondary1 }
+              '&:hover': { borderColor: colors.secondary1, color: colors.secondary1 },
             }}
           >
             {tech}

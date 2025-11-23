@@ -1,7 +1,6 @@
-
-import {Paper, Box, Typography, Chip, Avatar, IconButton, Button} from '@mui/material';
-import {MapPin, DollarSign, Bell, ChevronRight} from 'lucide-react';
-import {colors} from 'theme/colors.ts';
+import { Paper, Box, Typography, Chip, Avatar, IconButton, Button } from '@mui/material';
+import { MapPin, DollarSign, Bell, ChevronRight } from 'lucide-react';
+import { colors } from 'theme/colors.ts';
 interface IJobProps {
   id: number | string;
   title: string;
@@ -10,7 +9,7 @@ interface IJobProps {
   salary: string;
   tags: string[];
   isNew?: boolean;
-  logo? : string;
+  logo?: string;
 }
 const JobCard = ({
   id,
@@ -32,11 +31,11 @@ const JobCard = ({
         '&:hover': {
           transform: 'translateY(-2px)',
           boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-          borderColor: colors.secondary1
+          borderColor: colors.secondary1,
         },
         display: 'flex',
         flexDirection: { xs: 'column', sm: 'row' },
-        gap: 2
+        gap: 2,
       }}
     >
       <Avatar
@@ -46,7 +45,7 @@ const JobCard = ({
           height: 64,
           bgcolor: colors.secondaryGrey3,
           color: colors.secondary1,
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       >
         {logo || company.substring(0, 2).toUpperCase()}
@@ -63,11 +62,25 @@ const JobCard = ({
             </Typography>
           </Box>
           {isNew && (
-            <Chip label="NEW" size="small" color="success" sx={{ height: 20, fontSize: '0.7rem' }} />
+            <Chip
+              label="NEW"
+              size="small"
+              color="success"
+              sx={{ height: 20, fontSize: '0.7rem' }}
+            />
           )}
         </Box>
 
-        <Box sx={{ display: 'flex', gap: 2, mt: 1.5, mb: 2, color: colors.primaryGrey1, fontSize: '0.875rem' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: 2,
+            mt: 1.5,
+            mb: 2,
+            color: colors.primaryGrey1,
+            fontSize: '0.875rem',
+          }}
+        >
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
             <MapPin size={14} /> {location}
           </Box>
@@ -86,7 +99,7 @@ const JobCard = ({
                 borderRadius: '4px',
                 bgcolor: colors.secondaryGrey4,
                 color: colors.secondary1,
-                border: `1px solid ${colors.secondaryGrey3}`
+                border: `1px solid ${colors.secondaryGrey3}`,
               }}
             />
           ))}
@@ -108,5 +121,5 @@ const JobCard = ({
       </Box>
     </Paper>
   );
-}
+};
 export default JobCard;

@@ -1,2 +1,2 @@
-import get from 'lodash/get'
-export { get }
+import get from 'lodash/get';
+export { get };
