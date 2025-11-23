@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router';
 import Home from 'pages/Home';
 
