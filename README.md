@@ -1,5 +1,14 @@
 # React + TypeScript + Vite
 
+### Setup:
+`npm install` -> install requirements
+`nvm install 22` -> install node
+`npm run dev` -> run your server
+for formatting the all files:
+`npm run format`
+for specific files:
+`npx prettier --write src/components/Navbar/index.tsx`
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
