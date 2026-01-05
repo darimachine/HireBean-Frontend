@@ -9,4 +9,8 @@ export enum URLS {
   USERS_DETAIL = '/users/:userId/',
   ITEMS_LIST = '/items/',
   ITEMS_DETAIL = '/items/:itemId/',
+  JOB_LIST = '/jobs',
+  JOBS_DETAL = '/jobs/:id',
+  COMPANIES_LIST = '/companies',
+  COMPANIES_DETAL = '/companies/:id',
 }
