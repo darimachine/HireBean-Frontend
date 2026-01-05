@@ -4,7 +4,6 @@ import _ from 'lodash';
 import { toSearchParams } from './urls';
 import ky from 'ky';
 import useSWR from 'swr';
-import * as url from 'node:url';
 
 export { BASE_URL };
 

@@ -12,7 +12,7 @@ interface IJobProps {
   logo?: string;
 }
 const JobCard = ({
-  id,
+  id: _id,
   title,
   company,
   location,
